@@ -1,0 +1,106 @@
+<!DOCTYPE html lang="pl">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Macierze - Flynerd's Summer Of Code 2023</title>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>Macierze</h1>
+        <h5>przykładowa strona w czystym, semantycznym HTMLu</h5>
+      </hgroup>
+    </header>
+    <main>
+      <section id="matrix-desc">
+        <h1>Czym jest macierz?</h1>
+        <blockquote cite="https://pl.wikipedia.org/wiki/Macierz">
+          W matematyce macierz to układ liczb, symboli lub wyrażeń zapisanych w
+          postaci prostokątnej tablicy.
+        </blockquote>
+        <cite>https://pl.wikipedia.org/wiki/Macierz</cite>
+      </section>
+      <section>
+        <h1 id="matrix-chars">Charakterystyka macierzy</h1>
+        <section id="rows-cols">
+          <h2>Wiersze i kolumny</h2>
+          <dl>
+            <dt>wiersz</dt>
+            <dd>Pozioma seria liczb znajdująca się w jednej linii</dd>
+            <dt>kolumna</dt>
+            <dd>Pionowa seria liczb znajdująca się w jednej linii</dd>
+          </dl>
+        </section>
+        <section id="matrix-dims">
+          <h2>Wymiary macierzy</h2>
+          <dl>
+            <dt>wymiary macierzy</dt>
+            <dd>
+              Określenie ilości wierszy i kolumn w danej macierzy. Zapisywane w
+              formacie <em>wiersze x kolumny</em>. Przykładowo zapis 2x3
+              oznacza, że macierz ma dwa wiersze i trzy kolumny.
+            </dd>
+          </dl>
+        </section>
+      </section>
+      <section id="matrix-spec">
+        <h1>Niektóre rodzaje macierzy</h1>
+        <section>
+          <h3>Macierz kwadratowa</h3>
+          <p>
+            Macierz, która posiada taką samą liczbę wierszy i kolumn. Macierz ta
+            posiada swoją <b>przekątną</b>, czyli elementy leżące 'na skosie',
+            zaczynając od lewego górnego rogu a kończąc na prawym dolnym:
+          </p>
+          <img
+            src="img/Matrix_Diagonal.png"
+            alt="matrix diagonal"
+            height="200px"
+          />
+          <cite
+            >Autorstwa CiaPan - Praca własna, CC0,
+            <a href="https://commons.wikimedia.org/w/index.php?curid=33371581"
+              >https://commons.wikimedia.org/w/index.php?curid=33371581</a
+            ></cite
+          >
+        </section>
+        <section>
+          <h3>Macierz jednostkowa</h3>
+          <p>
+            <mark>Macierz kwadratowa</mark>, która na głównej przekątnej ma same
+            jedynki, a pozą główną przekątną - same zera.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3>Macierz zerowa</h3>
+        <p>Macierz, której wszystkie elementy są równe 0.</p>
+      </section>
+      <aside>
+        <p>spis treści:</p>
+        <menu>
+          <ul>
+            <a href="#matrix-desc">Czym jest macierz?</a>
+          </ul>
+          <ul>
+            <a href="#matrix-chars">Charakterystyka macierzy</a>
+          </ul>
+          <menu>
+            <ul>
+              <a href="#rows-cols">Wiersze i kolumny</a>
+            </ul>
+            <ul>
+              <a href="#matrix-dims">Wymiary macierzy</a>
+            </ul>
+          </menu>
+          <ul>
+            <a href="#matric-spec">Niektóre rodzaje macierzy</a>
+          </ul>
+        </menu>
+      </aside>
+    </main>
+    <footer>Karolina Kozubik - 2023 - #FlynerdSummerOfCode</footer>
+  </body>
+</html>
