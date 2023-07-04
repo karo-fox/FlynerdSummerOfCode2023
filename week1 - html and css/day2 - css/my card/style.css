@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  background-color: #1a1e24;
+  color: #ffffff;
+  margin: 2em 4em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main, footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+footer {
+  background-color: #9b0228;
+  text-align: center;
+  padding: 2em;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+}
+
+.title {
+  color: #9b0228;
+  font-size: 60px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 2em auto;
+}
+
+.tagline {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tagline {
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 2em 10em;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    margin: 2em 16em;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    margin: 2em 24em;
+  }
+}
