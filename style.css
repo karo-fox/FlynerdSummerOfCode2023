@@ -12,6 +12,65 @@ body {
   width: 90vw;
 }
 
+header {
+  font-size: 3vh;
+  margin: 1.5vh 0;
+}
+
+a {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.challenge-description {
+  font-size: 1.5em;
+  text-align: justify;
+  padding: 1.5vh 0;
+}
+
+.week {
+  padding: 1.5vh 0;
+}
+
+.week-name {
+  font-size: 2em;
+}
+
+.week-description {
+  padding: 1vh 0;
+  font-size: 1.25em;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1vw;
+}
+
+.day-name {
+  font-size: 1.5em;
+}
+
+.day-list {
+  padding: 1vmax;
+}
+
+.tasks {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2vw;
+}
+
+.task {
+  width: 10vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   body {
     width: 60vw;
