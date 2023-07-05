@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 2vh auto;
+  width: 90vw;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 60vw;
+  }
+}
