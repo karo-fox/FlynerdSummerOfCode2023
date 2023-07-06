@@ -25,17 +25,11 @@ nav {
   text-align: center;
 }
 
-.nav-list {}
-
-main {}
-
 header {
   grid-area: header;
   font-size: 2em;
   padding: 5vh;
 }
-
-.blog {}
 
 article {
   grid-area: article;
@@ -57,10 +51,6 @@ aside {
   padding-bottom: 25vh;
   text-align: end;
 }
-
-.find-me {}
-
-menu {}
 
 footer {
   grid-area: footer;
