@@ -1,2 +1,0 @@
-https://www.a11yproject.com/posts/what-is-semantic-html/?fbclid=IwAR28wffR-ubgynPy9HlPt9-X9xIVModmO5v9bFdEV9ZwZCIRwZ0K8L9YAQs
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element

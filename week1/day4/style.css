@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+    'nav header haeder'
+    'nav article aside'
+    'nav footer footer';
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+nav {
+  padding: 15vh 0;
+  grid-area: nav;
+  display: grid;
+  text-align: center;
+}
+
+.nav-list {}
+
+main {}
+
+header {
+  grid-area: header;
+  font-size: 2em;
+  padding: 5vh;
+}
+
+.blog {}
+
+article {
+  grid-area: article;
+}
+
+.welcome {
+  padding: 3vh 0;
+}
+
+.posts {
+  display: grid;
+  gap: 10vh;
+}
+
+aside {
+  grid-area: aside;
+  display: grid;
+  padding-right: 6vw;
+  padding-bottom: 25vh;
+  text-align: end;
+}
+
+.find-me {}
+
+menu {}
+
+footer {
+  grid-area: footer;
+  margin-right: 20%;
+  text-align: center;
+  align-self: center;
+}
