@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: #f1f6f9;
+  color: #394867;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+li {
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:visited {
+  color: #212a3e;
+}
+
+a:hover {
+  font-weight: 500;
+}
+
+a:active {
+  font-weight: 900;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  display: grid;
+}
+
+.category {
+  border-bottom: 1px solid #9ba4b5;
+  padding: 2rem;
+}
+
+.about {
+  text-align: justify;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+
+.heading {
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: end;
+  padding: 1rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem 0;
+  color: #212a3e;
+}
+
+.menu {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem 3rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project {
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.used-tools {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tool {
+  font-weight: 500;
+}
+
+.description {
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.achievements {
+  justify-content: start;
+}
+
+.disclaimer {
+  padding: 2rem;
+  text-align: justify;
+}
+
+@media (min-width: 640px) {
+  body {
+    margin: 0 10vw;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .about, .projects, .disclaimer {
+    grid-column: span 2;
+  }
+
+  .technologies {
+    grid-row: span 2;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .about, .project, .disclaimer {
+    grid-column: span 3;
+  }
+
+  .technologies {
+    grid-column: span 2;
+  }
+
+  .projects {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    margin: 0 20vw;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    margin: 0 30vw;
+  }
+}

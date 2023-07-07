@@ -25,3 +25,9 @@ You can see solution under here -> https://karo-fox.github.io/FlynerdSummerOfCod
 - https://github.com/kevin-powell/learn-grid-the-easy-way
 - https://www.youtube.com/watch?v=rg7Fvvl3taU
 - https://www.quackit.com/css/grid/tutorial/create_a_website_layout.cfm
+
+### Day 5
+- https://the-awwwesomes-2.gitbook.io/tutorial-the-awwwesomes-html-and-css/the-awwwesomes-tutorial-www-beginners-7
+- https://www.youtube.com/watch?v=69IbzTWg5PM
+- https://www.youtube.com/watch?v=S0a7PEOi0do
+- https://www.youtube.com/watch?v=_gH5FhMq8w4
