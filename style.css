@@ -19,7 +19,11 @@ li {
   padding: 0.5rem;
 }
 
-p, .day-list, .tasks {
+a {
+  color: #5BC0BE;
+}
+
+p, .list, .tasks {
   padding: 1rem 0;
 }
 
@@ -53,6 +57,7 @@ p, .day-list, .tasks {
 
 .sub-heading {
   color: #6FFFE9;
+  font-weight: 400;
 }
 
 .card {
