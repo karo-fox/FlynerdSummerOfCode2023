@@ -31,3 +31,17 @@ You can see solution under here -> https://karo-fox.github.io/FlynerdSummerOfCod
 - https://www.youtube.com/watch?v=69IbzTWg5PM
 - https://www.youtube.com/watch?v=S0a7PEOi0do
 - https://www.youtube.com/watch?v=_gH5FhMq8w4
+
+## Week 2
+
+### Day 1
+- https://www.grupatense.pl/blog/ux-dla-zielonych-czyli-jak-wlezc-miedzy-skore-a-kosci/
+- https://www.youtube.com/watch?v=IPdsFaM7HCs
+- https://www.youtube.com/watch?v=RlQEoJaLQRA 
+
+# Credits 
+
+## Week 1 project
+- [Twitter social badge icons created by riajulislam - Flaticon](https://www.flaticon.com/free-icons/twitter-social-badge)
+- [Facebook icons created by Bogdan Rosu - Flaticon](https://www.flaticon.com/free-icons/facebook)
+- [Instagram logo icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/instagram-logo)
