@@ -84,7 +84,21 @@
           Na czym polega koncepcja przyjaznych linków (Friendly URL)
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            Przyjazne linki są łatwe w zrozumieniu dla każdego użytkownika
+          </li>
+          <li>
+            Są pozbawione szczegółów implementacyjnych strony czy aplikacji
+            internetowej
+          </li>
+          <li>
+            Zawierają jedynie odniesienie do jakiegoś materiału, mogą przy tym
+            odwzorowywać hierarchiczną strukturę strony/aplikacji
+          </li>
+          <li>
+            Są pozbawione elementów takich jak <code>.html</code>,
+            <code>?id=1</code> i tym podobnych
+          </li>
         </ul>
       </section>
       <section class="card-content">
@@ -133,7 +147,18 @@
           utworzyć maksymalnie na stronie?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>Hierarchiczna struktura nagłówków ułatwia nawigację</li>
+          <li>
+            Odpowiednio zagnieżdżone nagłówki przekazują sposób zorganizowania
+            zawartości strony
+          </li>
+          <li>
+            Właściwa struktura nagłówków sprawia, że strona internetowa jest
+            znacznie bardziej dostępna dla użytkowników czytników ekranu
+          </li>
+          <li>
+            Elementy nagłówkowe to tagi od <code>&lt;h1&gt; - &lt;h6&gt;</code>
+          </li>
         </ul>
       </section>
       <section class="card-content">
@@ -141,7 +166,9 @@
           Czy można zamieścić kilka nagłówków h1 na jednej podstronie?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            Jest to zgodne ze standardem HTML, ale uważane za złą praktykę
+          </li>
         </ul>
       </section>
       <section class="card-content">
@@ -150,7 +177,17 @@
           <code>&lt;ruby&gt;</code> istnieje <code>&lt;python&gt;</code>?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>abbr</code> to tag oznaczający skrócenie lub akronim. Jeśli
+            zostanie zdefiniowany atrybut <code>title</code>, to po najechaniu
+            na element <code>abbr</code> przeglądarka wyświetli zawartość
+            <code>title</code> (powinno to być rozwinięcie skrótu)
+          </li>
+          <li>
+            tag <code>ruby</code> jest przeznaczony na małe annotacje, używany
+            zazwyczaj do zaprezentowania wymowy azjatyckich znaków
+          </li>
+          <li>tag <code>python</code> nie istnieje</li>
         </ul>
       </section>
       <section class="card-content">
@@ -159,7 +196,16 @@
           <code>&lt;select&gt;</code>?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>select</code> pozwala jedynie na wybór jednej z podanych
+            opcji, <code>datalist</code> umożliwia wpisanie własnej wartości
+          </li>
+          <li>
+            <code>datalist</code> może zostać związany z elementem
+            <code>input</code>. Wtedy za pomocą atrybutu <code>type</code> na
+            elemencie <code>input</code> można modyfikować sposób renderowania
+            elementu <code>datalist</code>
+          </li>
         </ul>
       </section>
       <section class="card-content">
@@ -169,13 +215,24 @@
           <code>&lt;ul&gt;</code>?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>dl</code> to element opisujący listę definicji (określanych
+            tagami <code>dt</code> oraz <code>dd</code>)
+          </li>
+          <li><code>table</code> reprezentuje tabelę</li>
+          <li>
+            <code>ol</code> oraz <code>ul</code> przedstawiają listy,
+            uporządkowaną i nieuporządkowaną
+          </li>
         </ul>
       </section>
       <section class="card-content">
         <h3 class="sub-heading">Do czego służy optgroup?</h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>optgroup</code> pozwala na zgrupowanie opcji wewnątrz elementu
+            <code>select</code>
+          </li>
         </ul>
       </section>
       <section class="card-content">
@@ -185,7 +242,24 @@
           rozróżniający te dwa tagi
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>q</code> służy do wyróżenienia cytatu w linii.
+            <code>blockquote</code> reprezentuje dłuższy cytat, który rozpoczyna
+            się od nowej linii i zazwyczaj jest przesunięty w prawo względem
+            paragrafu
+          </li>
+          <pre>
+            &lt;p&gt; Jego dokładne słowa brzmiały: &lt;q&gt;Niepokoi mnie twój brak wiary&lt;/q&gt;&lt;/p&gt;
+          </pre>
+          <pre>
+            &lt;section&gt;
+              &lt;blockquote&gt;
+                To statek, który pokonał trasę na Kessel w mniej niż 12 parseków. Jest szybszy od 
+                imperialnych niszczycieli. Nie mówię o krążownikach, pamiętaj. Mówię o wielkich statkach.
+                Jest wystarczająco szybki, staruszku
+              &lt;/blockquote&gt;
+            &lt;/section&gt;
+          </pre>
         </ul>
       </section>
       <section class="card-content">
@@ -193,7 +267,8 @@
           <code>&lt;sup&gt;</code> vs <code>&lt;sub&gt;</code>?
         </h3>
         <ul class="list">
-          <li></li>
+          <li><code>&lt;sup&gt;</code> - indeks górny (a<sup>n</sup>)</li>
+          <li><code>&lt;sub&gt;</code> - indeks dolny (a<sub>n</sub>)</li>
         </ul>
       </section>
       <section class="card-content">
@@ -203,13 +278,24 @@
           <code>&lt;kbd&gt;</code>.
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>pre</code> reprezentuje tekst, który jest wyświetlany
+            dokładnie tak jak zapisano (zachowane są spacje, łamanie wierszy
+            itp)
+          </li>
+          <li><code>code</code> wskazuje tekst, który jest fragmentem kodu</li>
+          <li>
+            <code>samp</code> reprezentuje dane wyjściowe programu komputerowego
+          </li>
+          <li>
+            <code>kbd</code> wskazuje na dane wejściowe, zazwyczaj z klawiatury
+          </li>
         </ul>
       </section>
       <section class="card-content">
         <h3 class="sub-heading">Co robi: <code>input type=file</code>?</h3>
         <ul class="list">
-          <li></li>
+          <li>Wyświetla przycisk pozwalający na wybór pliku z urządzenia</li>
         </ul>
       </section>
       <section class="card-content">
@@ -217,7 +303,7 @@
           Jaki znacznik jest używany, by przełamać wiersz?
         </h3>
         <ul class="list">
-          <li></li>
+          <li><code>&lt;br&gt;</code></li>
         </ul>
       </section>
       <section class="card-content">
@@ -225,7 +311,10 @@
           Za co odpowiada znacznik <code>&lt;hr&gt;</code>?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            <code>hr</code> reprezentuje poziomą linię, która ma oddzielać różne
+            sekcje dokumentu
+          </li>
         </ul>
       </section>
       <section class="card-content">
@@ -234,7 +323,19 @@
           Zaproponuj kawałek kodu.
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            Na tej stronie używam emotki jednorożca za pomocą takiego fragmentu
+            kodu: <code> list-style-type: "\1f984";</code>
+          </li>
+          <li>
+            Żeby skorzystać z własnego obrazka można skorzystać z poniższego
+            kodu:
+          </li>
+          <pre>
+            li::before {
+              content: url('./path/to/file');
+            }
+          </pre>
         </ul>
       </section>
       <section class="card-content">
@@ -243,7 +344,10 @@
           wysokość np. 4 wierszy?
         </h3>
         <ul class="list">
-          <li></li>
+          <li>
+            Można skorzystać z atrybutu <code>initial-letter</code> oraz z
+            selektora <code>::first-letter</code>
+          </li>
         </ul>
       </section>
     </main>
