@@ -39,6 +39,9 @@ You can see solution under here -> https://karo-fox.github.io/FlynerdSummerOfCod
 - https://www.youtube.com/watch?v=IPdsFaM7HCs
 - https://www.youtube.com/watch?v=RlQEoJaLQRA 
 
+### Day 2
+- https://www.designabetterbusiness.tools/tools/persona-canvas
+
 # Credits 
 
 ## Week 1 project
