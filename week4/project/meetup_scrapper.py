@@ -26,3 +26,6 @@ for event in events:
     print(f'{event["date"]} in {event["location"]}')
     print()
 
+with open('week4/project/backup.csv', 'w') as file:
+    for event in events:
+        file.write(f'{event["date"]};{event["location"]};{event["subject"]};{event["organizer"]}\n')
