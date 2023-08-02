@@ -115,6 +115,7 @@ pre {
   border-radius: 10px;
   text-align: center;
   display: flex;
+  border: none;
 }
 
 .task:hover {
