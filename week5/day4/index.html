@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteczka | Flynerd's Summer of Code 2023</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1 class="title">ZARZĄDZANIE BIBLIOTECZKĄ</h1>
+  <section class="management">
+    <section class="book-data">
+      <input type="text" name="title" id="title" placeholder="Podaj tytuł"/>
+      <input type="text" name="author" id="author" placeholder="Podaj autora"/>
+      <input type="text" name="publisher" id="publisher" placeholder="Podaj wydawnictwo"/>
+      <input type="text" name="year" id="year" placeholder="Podaj rok wydania"/>
+    </section>
+    <section class="actions">
+      <button id="addBook" class="task" onclick="addBook()">Dodaj książkę</button>
+      <button id="displayBooks" class="task" onclick="displayBooks()">Pokaż książki</button>
+      <section class="delete-book">
+        <input type="number" name="id" id="id" placeholder="id" />
+        <button id="deleteBook" class="task" onclick="deleteBook()">Usuń książkę</button>
+      </section> 
+    </section>
+  </section>
+  <section class="library" id="library"></section>
+</body>
+</html>
