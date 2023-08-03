@@ -1,9 +1,9 @@
 let books = [];
+let globalID = 1;
 
 function displayBooks() {
   document.getElementById("library").innerHTML = '';
   books.forEach((book) => {
-    console.log(book);
     let bookNode = document.createElement("div");
     let title = book.title.length < 40 ? book.title : book.title.slice(0, 40) + "..."
     bookNode.innerText = "{" + book.id + "} " + title + '\n' + book.author;
@@ -17,13 +17,14 @@ function addBook() {
   let author = document.getElementById("author").value;
   let publisher = document.getElementById("publisher").value;
   let year = document.getElementById("year").value;
-  books.push({id: books.length, title, author, publisher, year});
+  books.push({id: globalID, title, author, publisher, year});
+  globalID++;
   displayBooks();
 }
 
 function deleteBook() {
   let id = document.getElementById("id").value;
   let idx = books.findIndex((book) => book.id == id);
-  books.splice(idx, 1);
+  if (idx != -1) books.splice(idx, 1);
   displayBooks();
 }
