@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ogród | Flynerd's Summer of Code 2023</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1 class="title">OGRÓD</h1>
+  <section class="flex-content card-content">
+    <input type="number" name="flowerID" id="flowerID" placeholder="0" />
+    <button class="task" id="plant" onclick="addFlower()">➕</button>
+    <button class="task" id="water" onclick="waterFlower()">💧</button>
+    <button class="task" id="help" onclick="helpFlower()">🩹</button>
+    <button class="task" id="remove" onclick="removeFlower()">🗑</button>
+  </section>
+  <section class="flex-content garden card-content" id="garden"></section>
+</body>
+</html>

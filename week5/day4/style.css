@@ -18,6 +18,8 @@ input {
   padding: 2rem;
   border-radius: 10px;
   display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
