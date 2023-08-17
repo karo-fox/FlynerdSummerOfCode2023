@@ -3,7 +3,7 @@ import json
 
 URL = 'https://jsonplaceholder.typicode.com'
 
-def handle_response(response: requests.Response) -> None:
+def print_response(response: requests.Response) -> None:
     print(response.status_code)
     print()
     print(response.headers)
@@ -12,10 +12,9 @@ def handle_response(response: requests.Response) -> None:
         print(i)
         print()
 
-
 try:
     get_response = requests.get(f'{URL}/posts')
-    handle_response(get_response)
+    print_response(get_response)
 
     post_body = json.dumps({
         "title": "foo",
@@ -26,7 +25,7 @@ try:
         "Content-type": "application/json; charset=UTF-8",
     }
     post_response = requests.post(f'{URL}/posts', data=post_body, headers=post_headers)
-    handle_response(post_response)
+    print_response(post_response)
 
-except (requests.ConnectionError, requests.JSONDecodeError, requests.RequestException) as e:
+except requests.exceptions.RequestException as e:
     print(e)
