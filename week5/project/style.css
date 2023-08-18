@@ -9,12 +9,3 @@
 .garden {
   justify-content: start;
 }
-
-input {
-  background-color: #5bc0be;
-  color: #0b132b;
-  border-radius: 10px;
-  padding: 1rem;
-  border: none;
-  width: 4rem;
-}

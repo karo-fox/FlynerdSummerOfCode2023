@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript x API | Flynerd's Summer Of Code 2023</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1 class="title">...</h1>
+  <section class="days">
+    <div class="card">
+      <section class="card-content">
+        <section class="tasks">
+          <button class="task" onclick="getUsers()">GET</button>
+        </section>
+        <h2 class="sub-heading">User List</h2>
+        <section id="get-result"></section>
+      </section>
+    </div>
+    <div class="card">
+      <section class="card-content" id="post-card">
+        <section class="post-form">
+          <input type="text" name="first-name" id="first-name" placeholder="first name" class="form-elem" required>
+          <input type="text" name="last-name" id="last-name" placeholder="last name" class="form-elem" required>
+          <input type="text" name="email" id="email" placeholder="email" class="form-elem" required>
+          <button class="task form-elem" onclick="postUser()">POST</button>
+        </section>
+      </section>
+    </div>
+  </section>
+</body>
+</html>
