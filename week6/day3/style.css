@@ -17,6 +17,13 @@
   font-weight: 700;
 }
 
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 #post-card {
   justify-content: start;
 }

@@ -9,14 +9,17 @@
   <script src="./index.js"></script>
 </head>
 <body>
-  <h1 class="title">...</h1>
+  <h1 class="title">OBSŁUGA API</h1>
   <section class="days">
     <div class="card">
       <section class="card-content">
         <section class="tasks">
           <button class="task" onclick="getUsers()">GET</button>
         </section>
-        <h2 class="sub-heading">User List</h2>
+        <section class="pagination">
+          <button class="task" onclick="previousPage()">←</button>
+          <button class="task" onclick="nextPage()">→</button>
+        </section>
         <section id="get-result"></section>
       </section>
     </div>

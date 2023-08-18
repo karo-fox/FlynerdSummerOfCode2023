@@ -1,3 +1,5 @@
+PAGE = 1;
+
 function createNode(tag, content, classes = null) {
   let node = document.createElement(tag);
   node.innerText = content;
@@ -15,8 +17,20 @@ function createUserPanel(user) {
   return node;
 }
 
+function nextPage() {
+  if (PAGE < 2) PAGE++;
+  document.getElementById('get-result').innerHTML = '';
+  getUsers()
+}
+
+function previousPage() {
+  if (PAGE > 1) PAGE--;
+  document.getElementById('get-result').innerHTML = '';
+  getUsers()
+}
+
 async function getUsers() {
-  fetch('https://reqres.in/api/users?page=1')
+  fetch(`https://reqres.in/api/users?page=${PAGE}`)
     .then(res => res.json())
     .then(data => data.data.forEach(elem => {
       document.getElementById('get-result').appendChild(createUserPanel(elem));
